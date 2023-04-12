@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".main.ui.fragment.view.RecruitmentDetailFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueFacebook"
+        android:elevation="2dp"
+        app:navigationIcon="@drawable/baseline_arrow_back"
+        app:navigationIconTint="@color/white"
+        app:title="@string/job_detail"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_standard">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xx_small"
+                android:text="@string/company"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/font_standard" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/radius_standard"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/warmGrey"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgCompanyLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="1.1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_launcher_background" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/padding_small"
+                        android:paddingVertical="@dimen/padding_xxx_small"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgCompanyLogo"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCompanyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_xxx_small"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_standard"
+                            android:textStyle="bold"
+                            tools:text="Data Engineer" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCompanyLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_xxx_small"
+                            android:drawablePadding="@dimen/padding_xxx_small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/font_standard"
+                            app:drawableStartCompat="@drawable/baseline_location_on"
+                            app:drawableTint="@color/warmGrey"
+                            tools:text="Mimi Hearing Technologies GmbH" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCompanyWebsite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/padding_xxx_small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/go_to_website"
+                            android:textColor="@color/blueFacebook"
+                            android:textSize="@dimen/font_standard"
+                            android:textStyle="bold"
+                            app:drawableTint="@color/blueFacebook" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:layout_marginBottom="@dimen/margin_xx_small"
+                android:text="@string/job_specification"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/font_standard" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/radius_standard"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/warmGrey"
+                app:strokeWidth="1dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/padding_small"
+                    android:paddingVertical="@dimen/padding_xxx_small">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/margin_xxx_small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/title"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/font_standard" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtJobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_standard"
+                        android:textStyle="bold"
+                        tools:text="Data Engineer" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xxx_small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/fulltime"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/font_standard" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtJobType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_standard"
+                        android:textStyle="bold"
+                        tools:text="Yes" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xxx_small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/description"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/font_standard" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtJobDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_standard"
+                        android:textStyle="bold"
+                        tools:text="Data Engineer" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

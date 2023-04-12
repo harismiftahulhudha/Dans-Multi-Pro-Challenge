@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_xxx_small">4dp</dimen>
+    <dimen name="margin_xx_small">6dp</dimen>
+    <dimen name="margin_x_small">8dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_x_large">24dp</dimen>
+    <dimen name="margin_xx_large">28dp</dimen>
+    <dimen name="margin_xxx_large">32dp</dimen>
+    <dimen name="margin_huge">36dp</dimen>
+    <dimen name="margin_x_huge">40dp</dimen>
+    <dimen name="margin_xx_huge">44dp</dimen>
+    <dimen name="margin_xxx_huge">48dp</dimen>
+
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_xxx_small">4dp</dimen>
+    <dimen name="padding_xx_small">6dp</dimen>
+    <dimen name="padding_x_small">8dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_x_large">24dp</dimen>
+    <dimen name="padding_xx_large">28dp</dimen>
+    <dimen name="padding_xxx_large">32dp</dimen>
+    <dimen name="padding_huge">36dp</dimen>
+    <dimen name="padding_x_huge">40dp</dimen>
+    <dimen name="padding_xx_huge">44dp</dimen>
+    <dimen name="padding_xxx_huge">48dp</dimen>
+
+    <dimen name="font_xx_small">8sp</dimen>
+    <dimen name="font_x_small">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_standard">14sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_x_large">20sp</dimen>
+    <dimen name="font_xx_large">24sp</dimen>
+    <dimen name="font_xxx_large">34sp</dimen>
+    <dimen name="font_huge">48sp</dimen>
+    <dimen name="font_x_huge">60sp</dimen>
+    <dimen name="font_xx_huge">96sp</dimen>
+
+    <dimen name="radius_xx_small">2dp</dimen>
+    <dimen name="radius_x_small">4dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+    <dimen name="radius_standard">8dp</dimen>
+    <dimen name="radius_large">10dp</dimen>
+    <dimen name="radius_x_large">12dp</dimen>
+    <dimen name="radius_xx_large">14dp</dimen>
+    <dimen name="radius_xxx_large">16dp</dimen>
+    <dimen name="radius_huge">24dp</dimen>
+    <dimen name="radius_x_huge">32dp</dimen>
+
+    <dimen name="size_xx_small">2dp</dimen>
+    <dimen name="size_x_small">4dp</dimen>
+    <dimen name="size_small">6dp</dimen>
+    <dimen name="size_standard">8dp</dimen>
+    <dimen name="size_large">10dp</dimen>
+    <dimen name="size_x_large">12dp</dimen>
+    <dimen name="size_xx_large">14dp</dimen>
+    <dimen name="size_xxx_large">16dp</dimen>
+    <dimen name="size_huge">24dp</dimen>
+    <dimen name="size_x_huge">32dp</dimen>
+</resources>

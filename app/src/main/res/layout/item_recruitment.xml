@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="1dp"
+    android:layout_marginVertical="@dimen/margin_xxx_small"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/radius_standard"
+    app:cardElevation="@dimen/size_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCompanyLogo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_small"
+            android:paddingVertical="@dimen/padding_xxx_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgArrowEnd"
+            app:layout_constraintStart_toEndOf="@+id/imgCompanyLogo"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xxx_small"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_standard"
+                android:textStyle="bold"
+                tools:text="Data Engineer" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xxx_small"
+                android:drawablePadding="@dimen/padding_xxx_small"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/warmGrey"
+                android:textSize="@dimen/font_small"
+                app:drawableStartCompat="@drawable/baseline_supervised_user_circle"
+                app:drawableTint="@color/warmGrey"
+                tools:text="Mimi Hearing Technologies GmbH" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtCompanyLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_xxx_small"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/blueFacebook"
+                android:textSize="@dimen/font_small"
+                app:drawableStartCompat="@drawable/baseline_location_on"
+                app:drawableTint="@color/blueFacebook"
+                tools:text="Berlin" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgArrowEnd"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_forward"
+            app:tint="@color/warmGrey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

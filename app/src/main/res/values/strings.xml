@@ -1,0 +1,23 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="job_list">Job List</string>
+    <string name="search">Search</string>
+    <string name="fulltime">Fulltime</string>
+    <string name="location">Location</string>
+    <string name="filter">Filter</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="search_not_found">Search Not Found</string>
+    <string name="job_detail">Job Detail</string>
+    <string name="company">Company</string>
+    <string name="job_specification">Job Specification</string>
+    <string name="go_to_website">Go to Website</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="logout">Logout</string>
+    <string name="masuk_dengan_google">Masuk dengan Google</string>
+    <string name="masuk_dengan_facebook">Masuk dengan Facebook</string>
+    <string name="or">Or</string>
+    <string name="please_wait">Please Wait…</string>
+</resources>
